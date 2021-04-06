@@ -8,6 +8,7 @@
     <style>
       body {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
       }
@@ -31,12 +32,145 @@
           filter: hue-rotate(360deg);
         }
       }
+
+      .loading {
+        width: 1.5em;
+        height: 1.5em;
+        background: url('/assets/checkbox.png');
+      }
+
+      .attendee {
+        display: flex;
+        align-items: center;
+        /* list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg'); */
+        list-style-position: inside;
+        list-style-type: disc;
+      }
+
+      .attendee::before {
+        /* content: url(https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg); */
+        content: '⇒ ';
+        margin-right: 0.5rem;
+      }
+
+      h1 {
+        color: #808866;
+        margin: 0.5rem 2rem;
+      }
     </style>
   </head>
   <body>
     <img src="/assets/9april2021-optimised-2.png" />
+    <h1>who's coming?</h1>
     <ul>
-      <li>R</li>
+      <li class="attendee">
+        Shai
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/loading.gif"
+        />
+      </li>
+      <li class="attendee">
+        Max
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/loading.gif"
+        />
+      </li>
+      <li class="attendee">
+        Raïs
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee">
+        Ben
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee">
+        Joe
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee attending">
+        Shai
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee pending">
+        Emma
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee pending">
+        Ethan
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee pending">
+        Jed
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee pending">
+        Maddy
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee">
+        Jade
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
+      <li class="attendee">
+        Avi
+        <img
+          class="attendee-icon"
+          width="40"
+          height="40"
+          src="/assets/checkbox.png"
+        />
+      </li>
     </ul>
   </body>
 </html>
